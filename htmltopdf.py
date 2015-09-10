@@ -4,6 +4,9 @@ import tkFileDialog
 from Tkinter import *
 import os
 import urllib2
+#Made by Will Beddow for a client on  fiverr.com
+#For more information about me go to http://willbeddow.com
+#To hire Will, go to http://fiverr.com/willcbeddow
 root = Tk()
 root.withdraw()
 def overmain():

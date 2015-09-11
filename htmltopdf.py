@@ -22,10 +22,11 @@ def overmain():
 			pdfkit.from_file(fileobject, finalname)
 			overmain()
 		elif filetype=="dir":
+			os.chdir(fileobject)
 			for i in os.listdir(fileobject):
 				if ".html" in i or ".htm" in i:
 					finalname=(i.replace(i.split('.')[1], 'pdf'))
-					pdfkit.from_file(i, finalname)
+					pdfkit.from_file(i, fileobject+finalname)
 				else:
 					pass
 			overmain()
